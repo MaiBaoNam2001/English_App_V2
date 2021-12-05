@@ -1,0 +1,13 @@
+pojo\Question.class
+org\example\PrimaryController.class
+pojo\Choice.class
+services\CategoryService.class
+org\example\MainController.class
+services\QuestionService.class
+module-info.class
+configs\Utils.class
+org\example\SecondaryController.class
+configs\JDBCUtils.class
+org\example\App.class
+pojo\Category.class
+org\example\QuestionController.class

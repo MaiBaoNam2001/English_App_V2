@@ -1,0 +1,42 @@
+*{
+-fx-font-family: Tahoma;
+}
+Text.title{
+-fx-font-size: 40;
+-fx-fill: red;
+-fx-stroke-width: 3;
+-fx-stroke: gold;
+}
+VBox{
+-fx-background-color: lightblue;
+-fx-alignment: center;
+-fx-padding: 10;
+-fx-spacing: 10;
+}
+HBox{
+-fx-spacing: 10;
+-fx-alignment: center;
+}
+HBox TextField{
+-fx-pref-width: 400;
+}
+TextField, ComboBox{
+-fx-pref-height: 36;
+}
+Button{
+-fx-background-color: darkblue;
+-fx-background-insets: 0,0,0,0;
+-fx-text-fill: white;
+}
+Button:hover{
+-fx-background-color: blue;
+}
+Button:pressed{
+-fx-background-color: darkblue;
+}
+VBox.pratice{
+-fx-alignment: center-left;
+}
+Button.main{
+-fx-pref-width: 300;
+}

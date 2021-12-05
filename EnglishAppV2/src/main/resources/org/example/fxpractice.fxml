@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.PracticeController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="English Multiple Test" />
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="pratice">
+         <children>
+            <Label fx:id="txtQuestion" text="Label" />
+            <RadioButton fx:id="rdnA" mnemonicParsing="false" text="RadioButton">
+               <toggleGroup>
+                  <ToggleGroup fx:id="rdnToggle" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rdnB" mnemonicParsing="false" text="RadioButton" toggleGroup="$rdnToggle" />
+            <RadioButton fx:id="rdnC" mnemonicParsing="false" text="RadioButton" toggleGroup="$rdnToggle" />
+            <RadioButton fx:id="rdnD" mnemonicParsing="false" text="RadioButton" toggleGroup="$rdnToggle" />
+         </children>
+      </VBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#previousHandler" text="Previous" />
+            <Button mnemonicParsing="false" onAction="#checkAnswerHandler" text="Check Your Question" />
+            <Button mnemonicParsing="false" onAction="#nextHandler" text="Next" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

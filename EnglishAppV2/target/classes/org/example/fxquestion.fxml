@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.QuestionController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="English Multiple Choice Test" />
+      <TextField fx:id="txtQuestion" promptText="Enter question content" styleClass="title" />
+      <ComboBox fx:id="cbxCategory" prefWidth="150.0" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <RadioButton fx:id="rdnA" mnemonicParsing="false" text="A">
+               <toggleGroup>
+                  <ToggleGroup fx:id="rdnToggle" />
+               </toggleGroup></RadioButton>
+            <TextField fx:id="txtA" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="79.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <RadioButton fx:id="rdnB" mnemonicParsing="false" text="B" toggleGroup="$rdnToggle" />
+            <TextField fx:id="txtB" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="179.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <RadioButton fx:id="rdnC" mnemonicParsing="false" text="C" toggleGroup="$rdnToggle" />
+            <TextField fx:id="txtC" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="277.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <RadioButton fx:id="rdnD" mnemonicParsing="false" text="D" toggleGroup="$rdnToggle" />
+            <TextField fx:id="txtD" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addQuestionHandler" text="Add question" />
+            <Button mnemonicParsing="false" onAction="#resetHandler" text="Reset" />
+         </children>
+      </HBox>
+      <TextField fx:id="txtKeyword" promptText="Enter keyword..." />
+      <TableView fx:id="tbvQuestion" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</VBox>
